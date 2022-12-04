@@ -148,10 +148,6 @@ BOOL CCalculatorDlg::OnInitDialog()
 
 	// TODO: Add extra initialization here
 	m_font.CreateFont(20, 0, 0, 0, FW_BOLD, 0, 0, 0, DEFAULT_CHARSET, 0, 0, 0, 0, _T("Microsoft Sans Serif"));
-	
-	//m_output.CreateFont(32, 0, 0, 0, FW_BOLD, 0, 0, 0, DEFAULT_CHARSET, 0, 0, 0, 0, _T("Microsoft Sans Serif"));
-	//m_output.CreateFont(18, 0, 0, 0, FW_NORMAL, 0, 0, 0, DEFAULT_CHARSET, 0, 0, 0, 0, _T("Microsoft Sans Serif"));
-	//m_editResult.SetFont(&m_font);
 	m_button0.SetFont(&m_font);
 	m_button1.SetFont(&m_font);
 	m_button2.SetFont(&m_font);
@@ -256,12 +252,10 @@ void CCalculatorDlg::addDigit(char digit)
 	if (m_output == '0')
 	{
 		m_output = digit;
-		//str = digit;
 	}
 	else
 	{
 		m_output += digit;
-		//str += digit;
 	}
 	UpdateData(FALSE);
 }
@@ -402,9 +396,4 @@ void CCalculatorDlg::OnBnClickedButtonEqual()
 		
 	}
 	
-	//m_output.Format(L"%d", n);
-	//m_output = (CString)(std::to_wstring(n).c_str());
-	//UpdateData(FALSE);
-	//evaluatePostfix(newstr);
-	//m_output.Format(L"%d",)
 }
