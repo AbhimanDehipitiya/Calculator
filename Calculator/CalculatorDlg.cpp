@@ -85,6 +85,7 @@ void CCalculatorDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_BUTTON_REMAIN, m_button_remain);
 	DDX_Control(pDX, IDC_BUTTON_CLEAR, m_button_clear);
 	DDX_Control(pDX, IDC_BUTTON_EQUAL, m_button_equal);
+	DDX_Control(pDX, IDC_BUTTON_DOT, m_button_dot);
 }
 
 BEGIN_MESSAGE_MAP(CCalculatorDlg, CDialogEx)
@@ -164,8 +165,9 @@ BOOL CCalculatorDlg::OnInitDialog()
 	m_button_remain.SetFont(&m_font);
 	m_button_equal.SetFont(&m_font);
 	m_button_clear.SetFont(&m_font);
+	m_button_dot.SetFont(&m_font);
 
-	m_font2.CreateFont(20, 0, 0, 0, FW_BOLD, 0, 0, 0, DEFAULT_CHARSET, 0, 0, 0, 0, _T("Cambria"));
+	m_font2.CreateFont(25, 0, 0, 0, FW_BOLD, 0, 0, 0, DEFAULT_CHARSET, 0, 0, 0, 0, _T("Cambria"));
 	m_out.SetFont(&m_font2);
 
 	return TRUE;  // return TRUE  unless you set the focus to a control
