@@ -253,6 +253,10 @@ void CCalculatorDlg::addDigit(char digit)
 	{
 		m_output = digit;
 	}
+	else if (check1 > 1)
+	{
+		
+	}
 	else
 	{
 		m_output += digit;
@@ -262,66 +266,77 @@ void CCalculatorDlg::addDigit(char digit)
 
 void CCalculatorDlg::OnBnClickedButton1()
 {
+	if (check1 > 1){check1 = 0;}
 	addDigit('1');
 }
 
 
 void CCalculatorDlg::OnBnClickedButton2()
 {
+	if (check1 > 1) { check1 = 0; }
 	addDigit('2');
 }
 
 
 void CCalculatorDlg::OnBnClickedButton3()
 {
+	if (check1 > 1) { check1 = 0; }
 	addDigit('3');
 }
 
 
 void CCalculatorDlg::OnBnClickedButton4()
 {
+	if (check1 > 1) { check1 = 0; }
 	addDigit('4');
 }
 
 
 void CCalculatorDlg::OnBnClickedButton5()
 {
+	if (check1 > 1) { check1 = 0; }
 	addDigit('5');
 }
 
 
 void CCalculatorDlg::OnBnClickedButton6()
 {
+	if (check1 > 1) { check1 = 0; }
 	addDigit('6');
 }
 
 
 void CCalculatorDlg::OnBnClickedButton7()
 {
+	if (check1 > 1) { check1 = 0; }
 	addDigit('7');
 }
 
 
 void CCalculatorDlg::OnBnClickedButton8()
 {
+	if (check1 > 1) { check1 = 0; }
 	addDigit('8');
 }
 
 
 void CCalculatorDlg::OnBnClickedButton9()
 {
+	if (check1 > 1) { check1 = 0; }
 	addDigit('9');
 }
 
 
 void CCalculatorDlg::OnBnClickedButton0()
 {
+	if (check1 > 1) { check1 = 0; }
 	addDigit('0');
 }
 
 
 void CCalculatorDlg::OnBnClickedButtonMulti()
 {
+	check1++;
 	addDigit(' ');
 	addDigit('*');
 	addDigit(' ');
@@ -330,6 +345,7 @@ void CCalculatorDlg::OnBnClickedButtonMulti()
 
 void CCalculatorDlg::OnBnClickedButtonDivide()
 {
+	check1++;
 	addDigit(' ');
 	addDigit('/');
 	addDigit(' ');
@@ -338,6 +354,7 @@ void CCalculatorDlg::OnBnClickedButtonDivide()
 
 void CCalculatorDlg::OnBnClickedButtonAdd()
 {
+	check1++;
 	addDigit(' ');
 	addDigit('+');
 	addDigit(' ');
@@ -346,11 +363,8 @@ void CCalculatorDlg::OnBnClickedButtonAdd()
 
 void CCalculatorDlg::OnBnClickedButtonRemain()
 {
-	if (m_output != '0')
-	{
-		addDigit(' ');
-	}
-	
+	check1++;
+	addDigit(' ');
 	addDigit('%');
 	addDigit(' ');
 }
@@ -358,6 +372,7 @@ void CCalculatorDlg::OnBnClickedButtonRemain()
 
 void CCalculatorDlg::OnBnClickedButtonPower()
 {
+	check1++;
 	addDigit(' ');
 	addDigit('^');
 	addDigit(' ');
@@ -366,6 +381,7 @@ void CCalculatorDlg::OnBnClickedButtonPower()
 
 void CCalculatorDlg::OnBnClickedButtonSub()
 {
+	check1++;
 	addDigit(' ');
 	addDigit('-');
 	addDigit(' ');

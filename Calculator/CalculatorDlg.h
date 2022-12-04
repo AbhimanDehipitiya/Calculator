@@ -54,6 +54,7 @@ public:
 	afx_msg void OnBnClickedButtonClear();
 	afx_msg void OnBnClickedButtonEqual();
 	CString m_output;
+	int check1 = 0;
 
 private:
 	CFont m_font;
