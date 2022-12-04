@@ -111,6 +111,7 @@ BEGIN_MESSAGE_MAP(CCalculatorDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_CLEAR, &CCalculatorDlg::OnBnClickedButtonClear)
 	ON_BN_CLICKED(IDC_BUTTON_EQUAL, &CCalculatorDlg::OnBnClickedButtonEqual)
 	ON_BN_CLICKED(IDC_BUTTON_DOT, &CCalculatorDlg::OnBnClickedButtonDot)
+	ON_COMMAND(ID_ABOUT, &CCalculatorDlg::OnAbout)
 END_MESSAGE_MAP()
 
 
@@ -405,4 +406,11 @@ void CCalculatorDlg::OnBnClickedButtonEqual()
 		
 	}
 	
+}
+
+
+void CCalculatorDlg::OnAbout()
+{
+	CAboutDlg aboutdlg;
+	aboutdlg.DoModal();
 }
