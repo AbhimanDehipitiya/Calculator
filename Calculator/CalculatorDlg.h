@@ -61,7 +61,9 @@ private:
 	void addDigit(char digit);
 	int numbers[50], tn = -1, to = -1;
 	char op[50], exp[50];
+
 public:
+	CEdit m_out;
 	CButton m_button0;
 	CButton m_button1;
 	CButton m_button2;
@@ -72,7 +74,6 @@ public:
 	CButton m_button7;
 	CButton m_button8;
 	CButton m_button9;
-	CEdit m_out;
 	CButton m_button_multi;
 	CButton m_button_divide;
 	CButton m_button_add;
