@@ -110,6 +110,7 @@ BEGIN_MESSAGE_MAP(CCalculatorDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_SUB, &CCalculatorDlg::OnBnClickedButtonSub)
 	ON_BN_CLICKED(IDC_BUTTON_CLEAR, &CCalculatorDlg::OnBnClickedButtonClear)
 	ON_BN_CLICKED(IDC_BUTTON_EQUAL, &CCalculatorDlg::OnBnClickedButtonEqual)
+	ON_BN_CLICKED(IDC_BUTTON_DOT, &CCalculatorDlg::OnBnClickedButtonDot)
 END_MESSAGE_MAP()
 
 
@@ -317,6 +318,12 @@ void CCalculatorDlg::OnBnClickedButton9()
 void CCalculatorDlg::OnBnClickedButton0()
 {
 	addDigit('0');
+}
+
+
+void CCalculatorDlg::OnBnClickedButtonDot()
+{
+	addDigit('.');
 }
 
 

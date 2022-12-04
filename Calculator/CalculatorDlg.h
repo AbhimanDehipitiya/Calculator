@@ -82,4 +82,5 @@ public:
 	CButton m_button_remain;
 	CButton m_button_clear;
 	CButton m_button_equal;
+	afx_msg void OnBnClickedButtonDot();
 };
