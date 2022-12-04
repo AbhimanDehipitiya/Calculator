@@ -244,7 +244,12 @@ void CCalculatorDlg::addDigit(char digit)
 	else
 		m_output += digit;
 	UpdateData(FALSE);
-}
+	if (m_output == (" * ") || m_output == (" / ") || m_output == (" ^ ") || m_output == (" % "))
+	{
+		m_output = '0';
+	}
+	UpdateData(FALSE);
+}	
 
 void CCalculatorDlg::OnBnClickedButton1()
 {
