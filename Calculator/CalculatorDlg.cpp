@@ -91,7 +91,6 @@ BEGIN_MESSAGE_MAP(CCalculatorDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
-	ON_BN_CLICKED(IDOK, &CCalculatorDlg::OnBnClickedOk)
 	ON_BN_CLICKED(IDC_BUTTON1, &CCalculatorDlg::OnBnClickedButton1)
 	ON_BN_CLICKED(IDC_BUTTON2, &CCalculatorDlg::OnBnClickedButton2)
 	ON_BN_CLICKED(IDC_BUTTON3, &CCalculatorDlg::OnBnClickedButton3)
@@ -222,20 +221,6 @@ HCURSOR CCalculatorDlg::OnQueryDragIcon()
 }
 
 
-
-void CCalculatorDlg::OnBnClickedOk()
-{
-	// TODO: Add your control notification handler code here
-	CDialogEx::OnOK();
-}
-
-
-void CCalculatorDlg::OnBnClickedButton11()
-{
-	// TODO: Add your control notification handler code here
-}
-
-
 void CCalculatorDlg::OnEnChangeEdit1()
 {
 	// TODO:  If this is a RICHEDIT control, the control will not
@@ -251,13 +236,9 @@ void CCalculatorDlg::OnEnChangeEdit1()
 void CCalculatorDlg::addDigit(char digit)
 {
 	if (m_output == '0')
-	{
 		m_output = digit;
-	}
 	else
-	{
 		m_output += digit;
-	}
 	UpdateData(FALSE);
 }
 
@@ -354,9 +335,7 @@ void CCalculatorDlg::OnBnClickedButtonAdd()
 void CCalculatorDlg::OnBnClickedButtonRemain()
 {
 	if (m_output != '0')
-	{
 		addDigit(' ');
-	}
 	
 	addDigit('%');
 	addDigit(' ');
@@ -390,16 +369,14 @@ void CCalculatorDlg::OnBnClickedButtonEqual()
 {
 	
 	
-	if (m_output != (" + ") && m_output != (" - ") && m_output != (" * ") && m_output != (" / ") && m_output != (" ^ ") && m_output != (" % "))
-	{
+	if (m_output != (" + ") && m_output != (" - ") && m_output != (" * ") && m_output != (" / ") && m_output != (" ^ ") && m_output != (" % ")) {
 		float n;
 		std::string str(CW2A(m_output.GetString(), CP_UTF8));
 		n = evaluate(str);
 		m_output = (CString)(std::to_wstring(n).c_str());
 		UpdateData(FALSE);
 	}
-	else
-	{
+	else {
 		
 	}
 	
