@@ -206,6 +206,7 @@
     <ResourceCompile Include="Calculator.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
     <None Include="res\Calculator.rc2" />
   </ItemGroup>
   <ItemGroup>

@@ -46,7 +46,6 @@ float evaluate(std::string tokens) {
     }
 
     for (i = 0; i < tokens.length(); i++) {
-
         // Current token is a whitespace,
         // skip it.
         if (tokens[i] == ' ')
@@ -66,8 +65,7 @@ float evaluate(std::string tokens) {
 
             // There may be more than one
             // digits in number.
-            while (i < tokens.length() && (isdigit(tokens[i]) || tokens[i] == '.'))
-            {
+            while (i < tokens.length() && (isdigit(tokens[i]) || tokens[i] == '.')) {
                 str += tokens[i];
                 i++;
 
