@@ -48,7 +48,7 @@
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>UAiEAZEAIACAFDAKCBAAJAgAABAAgkQAgAAsIAAQAgA=</HashCode>
+      <HashCode>UAiEAZEAIACIFCAKCBAAJAgAAFAAgkQAgAAoIAAQAgA=</HashCode>
       <FileName>CalculatorDlg.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -104,18 +104,6 @@
   </Class>
   <Class Name="CCmdTarget" Collapsed="true">
     <Position X="12.75" Y="2" Width="1.5" />
-    <NestedTypes>
-      <Struct Name="CCmdTarget::XDispatch" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\atlmfc\include\afxwin.h</NewMemberFileName>
-        </TypeIdentifier>
-      </Struct>
-      <Struct Name="CCmdTarget::XConnPtContainer" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\atlmfc\include\afxwin.h</NewMemberFileName>
-        </TypeIdentifier>
-      </Struct>
-    </NestedTypes>
     <InheritanceLine Type="CObject">
       <InheritanceModifierLabel ManuallyPlaced="true">
         <Position X="0.052" Y="0.06" />
@@ -135,28 +123,6 @@
   </Class>
   <Class Name="CWnd" Collapsed="true">
     <Position X="7.75" Y="1.25" Width="3.25" />
-    <NestedTypes>
-      <Enum Name="CWnd::AdjustType" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\atlmfc\include\afxwin.h</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-      <Enum Name="CWnd::RepositionFlags" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\atlmfc\include\afxwin.h</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-      <Class Name="CWnd::XAccessible" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\atlmfc\include\afxwin.h</NewMemberFileName>
-        </TypeIdentifier>
-      </Class>
-      <Class Name="CWnd::XAccessibleServer" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\atlmfc\include\afxwin.h</NewMemberFileName>
-        </TypeIdentifier>
-      </Class>
-    </NestedTypes>
     <InheritanceLine Type="CCmdTarget" ManuallyRouted="true" FixedToPoint="true">
       <Path>
         <Point X="12.75" Y="2.313" />

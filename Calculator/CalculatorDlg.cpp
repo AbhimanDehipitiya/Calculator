@@ -145,7 +145,7 @@ BOOL CCalculatorDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// Set small icon
 
 	// TODO: Add extra initialization here
-	m_font.CreateFont(20, 0, 0, 0, FW_BOLD, 0, 0, 0, DEFAULT_CHARSET, 0, 0, 0, 0, _T("Microsoft Sans Serif"));
+	m_font.CreateFont(20, 0, 0, 0, FW_BOLD, 0, 0, 0, DEFAULT_CHARSET, 0, 0, 0, 0, _T("Cambria"));
 	m_button0.SetFont(&m_font);
 	m_button1.SetFont(&m_font);
 	m_button2.SetFont(&m_font);
@@ -165,7 +165,7 @@ BOOL CCalculatorDlg::OnInitDialog()
 	m_button_equal.SetFont(&m_font);
 	m_button_clear.SetFont(&m_font);
 
-	m_font2.CreateFont(35, 0, 0, 0, FW_BOLD, 0, 0, 0, DEFAULT_CHARSET, 0, 0, 0, 0, _T("Microsoft Sans Serif"));
+	m_font2.CreateFont(20, 0, 0, 0, FW_BOLD, 0, 0, 0, DEFAULT_CHARSET, 0, 0, 0, 0, _T("Cambria"));
 	m_out.SetFont(&m_font2);
 
 	return TRUE;  // return TRUE  unless you set the focus to a control
