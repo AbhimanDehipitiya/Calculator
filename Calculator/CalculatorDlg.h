@@ -32,8 +32,6 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 public:
-	afx_msg void OnBnClickedOk();
-	afx_msg void OnBnClickedButton11();
 	afx_msg void OnEnChangeEdit1();
 	afx_msg void OnBnClickedButton1();
 	afx_msg void OnBnClickedButton2();
@@ -53,6 +51,7 @@ public:
 	afx_msg void OnBnClickedButtonSub();
 	afx_msg void OnBnClickedButtonClear();
 	afx_msg void OnBnClickedButtonEqual();
+	afx_msg void OnBnClickedButtonDot();
 	CString m_output;
 	int check1 = 0;
 
@@ -83,5 +82,4 @@ public:
 	CButton m_button_remain;
 	CButton m_button_clear;
 	CButton m_button_equal;
-	afx_msg void OnBnClickedButtonDot();
 };
