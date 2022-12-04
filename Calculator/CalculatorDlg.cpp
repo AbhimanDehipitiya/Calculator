@@ -235,7 +235,7 @@ void CCalculatorDlg::OnEnChangeEdit1()
 
 void CCalculatorDlg::addDigit(char digit)
 {
-	if (m_output == '0')
+	if (m_output == '0') {
 		m_output = digit;
 	}
 	else if (check1 > 1) {}
